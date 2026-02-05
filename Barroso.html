@@ -2,27 +2,172 @@
 <html>
     <head>
         <title> Lance Gabriel A. Barroso - Portfolio </title>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&family=Fira+Code&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Barroso.css">
     </head>
     <body>
 
         <nav class="taas">
             <div class="logo"> 
-                <img src="logo.jpg"alt="LGAB" class="profile-img">
-            </div>
+                <img src="logo.jpg"alt="LGAB"></div>
+                <ul class="taas-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skillset">Skills</a></li>
+                    <li><a href="#affiliations">Affiliations</a></li>
+                    <li class="contact-btn-item"><a href="#contact" class="btn-nav">Contact</a></li>
+                </ul>
         </nav>
 
-        <header class="header-section">
+        <header id = "about" class="header-section">
             <div class="header-infos">
                 <h3> Hello, I am</h3>
                 <h1> LANCE GABRIEL A. BARROSO </h1>
                 <p>Specializing in Software Engineering & Basic Programming.</p>
+                <p>ABOUT ME</p>
+            <div class="profile-btns">
+                <li><a href="#github" class="btn-primary">Github</a></li>
+                <li><a href="#links" class="btn-secondary">Links</a></li>
+
+            </div>
+            <div class="profile-style">
+            <div class="red-glow"></div>
+                <img src="profile.jpg" alt="Lance Barroso" class="profile-img">
             </div>
         </header>
 
         <section id="skillset" class="skills-tab">
             <h3 class="section-title">Technical Arsenal</h3>
             <p class="subtitle">Click tabs to switch categories. Click items to see details.</p>
-        </section>
+
+            <div class="tabs-container">
+            <input type="radio" id="tab1" name="skills" checked>
+            <input type="radio" id="tab2" name="skills">
+            <input type="radio" id="tab3" name="skills">
+
+            <div class="tab-labels">
+                <label for="tab1">C</label>
+                <label for="tab2">Web </label>
+                <label for="tab3">Data Science</label>
+            </div>
+
+            <div class="tab-content">
+                
+                <div class="content-box c1">
+                    <div class="skill-flex-container">
+                        <a href="#popup-c" class="skill-card">
+                            <span class="icon"></span>
+                            <h4>C Language</h4>
+                        </a>
+                        <a href="#popup-algo" class="skill-card">
+                            <span class="icon"></span>
+                            <h4></h4>
+                        </a>
+                        <a href="#popup-mem" class="skill-card">
+                            <span class="icon"></span>
+                            <h4></h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content-box c2">
+                    <div class="skill-flex-container">
+                        <a href="#popup-html" class="skill-card">
+                            <span class="icon"></span>
+                            <h4></h4>
+                        </a>
+                        <a href="#popup-css" class="skill-card">
+                            <span class="icon"></span>
+                            <h4></h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content-box c3">
+                    <div class="skill-flex-container">
+                        <a href="#popup-ds" class="skill-card">
+                            <span class="icon"></span>
+                            <h4></h4>
+                        </a>
+                        <a href="#popup-py" class="skill-card">
+                            <span class="icon"></span>
+                            <h4></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup-c" class="overlay">
+        <div class="popup">
+            <h2></h2>
+            <a class="close" href="#skills">&times;</a>
+            <div class="popup-content">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-algo" class="overlay">
+        <div class="popup">
+            <h2></h2>
+            <a class="close" href="#skills">&times;</a>
+            <div class="popup-content">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+     <div id="popup-mem" class="overlay">
+        <div class="popup">
+            <h2></h2>
+            <a class="close" href="#skills">&times;</a>
+            <div class="popup-content">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-html" class="overlay">
+        <div class="popup">
+            <h2></h2>
+            <a class="close" href="#skills">&times;</a>
+            <div class="popup-content">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-css" class="overlay">
+        <div class="popup">
+            <h2></h2>
+            <a class="close" href="#skills">&times;</a>
+            <div class="popup-content">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+     <div id="popup-ds" class="overlay">
+        <div class="popup">
+            <h2></h2>
+            <a class="close" href="#skills">&times;</a>
+            <div class="popup-content">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+     <div id="popup-py" class="overlay">
+        <div class="popup">
+            <h2></h2>
+            <a class="close" href="#skills">&times;</a>
+            <div class="popup-content">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
 
         <section id="affiliations" class="affiliate-tab">
             <div class="affiliate-cube">
@@ -30,6 +175,17 @@
             <p class="affiliate-subtitle">Click each affiliations.</p>
             </div>
         </section>
+
+        <section id="links" class="links-box">
+            <h3>Connect With Me</h3>
+            <div class="links-flow-container">
+                <a href="twitter-link" class="social-link">X <span>github.com/lancebarroso</span></a>
+                <a href="facebook-link" class="social-link">Facebook<span>github.com/lancebarroso</span></a>
+                <a href="instagram-link" class="social-link">Instagram<span>github.com/lancebarroso</span></a>
+                <a href="linkedin-link" class="social-link">LinkedIn<span>github.com/lancebarroso</span></a>
+
+            </div>
+        </div>
 
         <section id="github" class="github-tab">
             <div class="github-cube">
