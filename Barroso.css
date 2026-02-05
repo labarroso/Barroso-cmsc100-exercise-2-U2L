@@ -1,14 +1,8 @@
-:root {
-    --primary-maroon: #580000;
-    --dark-maroon: #2b0505;
-    --accent-red: #ff3333;
-    --gold: #ffcc00;
-    --glass: rgba(255, 255, 255, 0.05);
-    --text-white: #e0e0e0;
-    --font-header: 'Cinzel', serif;
-    --font-body: 'Montserrat', sans-serif;
-    --font-code: 'Fira Code', monospace;
-}
+/* Barroso, Lance Gabriel A.
+ 2024-07454
+ CMSC 100 U2L
+ Exercise 2
+*/
 
 * {
     margin: 0;
@@ -18,33 +12,28 @@
 }
 
 body {
-    background-color: #0a0a0a;
-    background-image: 
-        radial-gradient(circle at 10% 20%, #4a0000 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, #2b0505 0%, transparent 40%);
-    color: var(--text-white);
-    font-family: var(--font-body);
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
 .taas {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;            
+    justify-content: space-between;
+    align-items: center;
     padding: 1.5rem 8%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
+    background: #000;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255, 0, 0, 0.1);
+    z-index: 100;
+    border-bottom: 1px solid #333;
 }
 
 .logo {
-    font-family: var(--font-header);
-    font-size: 1.8rem;
-    color: var(--accent-red);
-    letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: #ff3333;
 }
 
 .taas-links {
@@ -55,24 +44,34 @@ body {
 
 .taas-links a {
     text-decoration: none;
-    color: var(--text-white);
-    font-weight: 500;
+    color: #fff;
 }
+
 
 .taas-links a:hover {
-    color: var(--accent-red);
+    color: #ff3333;
 }
 
+
+
+
 .btn-nav {
-    border: 1px solid var(--accent-red);
+    border: 1px solid #ff3333;
     padding: 8px 20px;
     border-radius: 4px;
+    color: #ff3333;
 }
+
+.btn-nav:hover {
+    background: #ff3333;
+    color: #fff;
+}
+
 
 .header-section {
     min-height: 90vh;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0 10%;
@@ -85,12 +84,12 @@ body {
     z-index: 2;
 }
 
-.hero-infos h1 {
-    font-size: 3.5rem;
-    font-family: var(--font-header);
-    line-height: 1.1;
+
+.header-infos h1 {
+    font-size: 3rem;
     margin: 10px 0;
-    text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Cinzel', serif;
 }
 
 .profile-btns {
@@ -99,36 +98,36 @@ body {
     margin-top: 30px;
 }
 
-.btn-secondary {
-    align-self: flex-start; 
-    padding: 12px 30px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s;
-}
 
 .btn-primary {
-    background: var(--accent-red);
+    background: #ff3333;
     color: white;
     padding: 12px 30px;
     text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 15px var(--primary-maroon);
-    transition: transform 0.3s;
+    border-radius: 4px;
+    order: 2;
+}
+
+.btn-secondary {
+    padding: 12px 30px;
+    border: 1px solid #fff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    align-self: center;
+    order: 1;
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 25px var(--accent-red);
+    background: #cc0000;
 }
 
 .btn-secondary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 25px var(--accent-red);
+    background: #fff;
+    color: #000;
 }
 
-.profile-style{
+.profile-style {
     flex: 1;
     position: relative;
     display: flex;
@@ -136,26 +135,375 @@ body {
 }
 
 .profile-img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #ff3333;
     object-fit: cover;
-    border-radius: 20px;
-    filter: grayscale(40%);
-    border: 2px solid var(--accent-red);
-    transform: rotate(3deg);
-    transition: all 0.5s ease;
 }
 
-.profile-img:hover {
-    filter: grayscale(0%);
+
+.project-img {
+    width: 100%;           
+    max-width: 600px; 
+    object-fit: cover;
+    display: block;     
+    height: auto; 
+    border: 2px solid #ff3333;
+    border-radius: 8px;             
+                   
 }
+
+
+
 
 .red-glow {
     position: absolute;
     width: 300px;
     height: 300px;
-    background: var(--accent-red);
-    filter: blur(80px);
-    opacity: 0.4;
+    background: #ff3333;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.2;
     z-index: -1;
+}
+
+#proj-tab1:checked ~ .tab-labels label[for="proj-tab1"],
+#proj-tab2:checked ~ .tab-labels label[for="proj-tab2"],
+#proj-tab3:checked ~ .tab-labels label[for="proj-tab3"] {
+    background: #ff3333;
+    color: #fff;
+}
+
+
+#proj-tab1:checked ~ .tab-content .c1,
+#proj-tab2:checked ~ .tab-content .c2,
+#proj-tab3:checked ~ .tab-content .c3 {
+    display: block;
+}
+
+
+.skills-tab {
+    padding: 90px 10%;
+    background: #222;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+.tabs-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.tab-labels {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.tab-labels label {
+    padding: 10px 25px;
+    background: #333;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Fira Code', monospace;
+}
+
+.tab-labels label:hover {
+    background: #444;
+}
+
+
+.tab-content {
+    display: block;
+}
+
+.content-box {
+    display: none;
+}
+
+
+#skill-tab1:checked ~ .tab-labels label[for="skill-tab1"],
+#skill-tab2:checked ~ .tab-labels label[for="skill-tab2"],
+#skill-tab3:checked ~ .tab-labels label[for="skill-tab3"], 
+#skill-tab4:checked ~ .tab-labels label[for="skill-tab4"]{
+    background: #ff3333;
+    color: #fff;
+}
+
+
+#skill-tab1:checked ~ .tab-content .c1,
+#skill-tab2:checked ~ .tab-content .c2,
+#skill-tab3:checked ~ .tab-content .c3,
+#skill-tab4:checked ~ .tab-content .c4 {
+    display: block;
+}
+
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    padding: 20px;
+    gap: 20px;
+}
+
+.skill-card {
+    background: #333;
+    padding: 20px;
+    width: 180px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+.skill-card:hover {
+    background: #444;
+    border-color: #ff3333;
+}
+
+
+
+.skill-icon {
+    width: 60px;            
+    height: 60px;              
+    display: block;  
+    object-fit: contain;    
+    margin-bottom: 15px;        
+    margin-left: auto;    
+    margin-right: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup, .popup-contact {
+    background: #1a1a1a;
+    padding: 30px;
+    width: 400px;
+    border: 1px solid #ff3333;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.popup-back {
+    margin-top: 10px;
+
+}
+
+
+
+.popup-content {
+    margin-top: 10px;
+
+}
+
+.close {
+    position: absolute;
+    font-size: 24px;
+    text-decoration: none;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+
+}
+
+
+.affiliate-tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    background: #1a1a1a;
+    padding: 90px 10%;
+    
+}
+
+.affiliate-box {
+    flex: 1;
+    background: #222;
+    padding: 30px;
+    border-left: 4px solid #ffcc00;
+}
+
+.affiliate-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+
+
+.aff-list {
+    list-style: none;
+}
+
+.aff-list li {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-tab {
+    padding: 90px 10%;
+
+    background: #222;
+}
+
+.links-box {
+    background: #1a1a1a;
+    padding: 30px;
+
+    border-left: 4px solid #ffcc00;
+}
+
+.abtm-tab {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 90px 10%;
+    background: #222;
+}
+
+.abtm-card {
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: center;  
+    background: #1e1e1e;
+    
+    border-left: 3px solid #ff3333;
+    gap: 15px; 
+    padding: 40px;
+    max-width: 700px;
+}
+
+.question {
+    align-self: flex-start; 
+    order: 1; 
+    font-family: 'Fira Code', monospace;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.abtm-card h2 {
+    order: 2;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+}
+
+.abtm-card p {
+    order: 3;
+    color: #bbb;
+
+    line-height: 1.6;
+
+}
+
+.abtm-card strong {
+    color: #ff3333;
+}
+
+.links-flow-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-link {
+    padding: 10px 20px;
+    background: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    
+}
+
+.social-link:hover {
+    background: #fff;
+    color: #000;
+}
+
+.github-tab {
+    background: #000;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.github-box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.glitch-text {
+    font-family: 'Fira Code', monospace;
+    font-size: 2rem;
+    color: #ff3333;
+
+    margin-bottom: 10px;
+}
+
+.gh-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: 1px solid #ff3333;
+    color: #ff3333;
+    font-family: 'Fira Code', monospace;
+    text-decoration: none;
+}
+
+.gh-btn:hover {
+    background: #ff3333;
+    color: #fff;
+}
+
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #111;
+    color: #666;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
 }

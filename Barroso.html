@@ -1,3 +1,9 @@
+<!-- Barroso, Lance Gabriel A.
+ 2024-07454
+ CMSC 100 U2L
+ Exercise 2
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,200 +15,293 @@
 
         <nav class="taas">
             <div class="logo"> 
-                <img src="logo.jpg"alt="LGAB"></div>
-                <ul class="taas-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skillset">Skills</a></li>
-                    <li><a href="#affiliations">Affiliations</a></li>
-                    <li class="contact-btn-item"><a href="#contact" class="btn-nav">Contact</a></li>
-                </ul>
+                <img src="logoo.png" >
+            </div>
+            <ul class="taas-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skillset">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#affiliations">Affiliations</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a>
+                </li>
+            </ul>
         </nav>
 
-        <header id = "about" class="header-section">
+        <header id="about" class="header-section">
             <div class="header-infos">
                 <h3> Hello, I am</h3>
                 <h1> LANCE GABRIEL A. BARROSO </h1>
                 <p>Specializing in Software Engineering & Basic Programming.</p>
-                <p>ABOUT ME</p>
-            <div class="profile-btns">
-                <li><a href="#github" class="btn-primary">Github</a></li>
-                <li><a href="#links" class="btn-secondary">Links</a></li>
-
+                <div class="profile-btns">
+                    <a href="#github" class="btn-primary">Github</a>
+                    <a href="#links" class="btn-secondary">Links</a>
+                </div>
             </div>
             <div class="profile-style">
-            <div class="red-glow"></div>
-                <img src="profile.jpg" alt="Lance Barroso" class="profile-img">
+                <div class="red-glow"></div>
+                <img src="profile.jpg" class="profile-img">
             </div>
         </header>
 
-        <section id="skillset" class="skills-tab">
-            <h3 class="section-title">Technical Arsenal</h3>
-            <p class="subtitle">Click tabs to switch categories. Click items to see details.</p>
+        <section class="abtm-tab">
+            <div class="abtm-card">
+                <span class="question">WHO AM I?</span>
+                <h2>Lance Gabriel Barroso</h2>
+                <p>
+                    I am a 19-year-old <strong>Computer Science Sophomore</strong> at UPLB (University of the Philippines Los Baños ). 
+                    I'm highly interested on software development, data science, cybersecurity and making innovations in tech. My current focus is mastering <strong>C and Basic Programming</strong>.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="skills-tab">
+            <h3 class="section-title">Projects Made</h3>
+            <p class="subtitle">Click tabs to switch and see details.</p>
 
             <div class="tabs-container">
-            <input type="radio" id="tab1" name="skills" checked>
-            <input type="radio" id="tab2" name="skills">
-            <input type="radio" id="tab3" name="skills">
+                <input type="radio" id="proj-tab1" name="projects">
+                <input type="radio" id="proj-tab2" name="projects">
+                <input type="radio" id="proj-tab3" name="projects">
 
-            <div class="tab-labels">
-                <label for="tab1">C</label>
-                <label for="tab2">Web </label>
-                <label for="tab3">Data Science</label>
+                <div class="tab-labels">
+                    <label for="proj-tab1">Data Science Project</label>
+                    <label for="proj-tab2">Web</label>
+                    <label for="proj-tab3">OOP Project</label>
+                </div>
+
+                <div class="tab-content">
+                    <div class="content-box c1">
+                        <div class="skill-container">
+                            <img src="ds project.png"  class="project-img">
+                            </div>
+                            <p>This is the Greenvale Pollution Reduction Planner, which is a complete, fully functional desktop
+                            application that solves the City of Greenvale’s large-scale pollution mitigation problem using
+                            Linear Programming and the Simplex Method. This system is a pollution reduction optimization
+                            tool designed to help the City of Greenvale select the most cost-effective combination of
+                            environmental mitigation projects while meeting or exceeding the national government’s
+                            mandatory reduction targets for 10 priority pollutants. There are 30 available mitigation projects.</p>
+                    </div>
+
+                    <div class="content-box c2">
+                        <div class="skill-container">
+                            <img src="web.png"  class="project-img">
+                        </div>
+                        <p>This ia portfolio website project developed from using HTML5 and CSS to represent my profile as a sophomore Computer 
+                            Science student in UPLB. It features a modern design. It containsa curated list of my technical skills, and a showcase of previous 
+                            academic projects. The site is deployed through GitHub Pages.</p>
+                    </div>
+
+                    <div class="content-box c3">
+                        <div class="skill-container">
+                            <img src="oop.png"  class="project-img">
+                        </div>
+                        <p>This is REGICS which stands for Registration ICS, a desktop application for managing student registrations 
+                            and enlistments in the Computer Science Department of UPLB. I features unique UI/UX design and a user-friendly interface.
+                            Its unique feature is that it has an announcement page and it utilizes a unique calendar system for enlisting various courses.
+                            It is uniquely designed for the Computer Science students of UPLB.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skillset" class="skills-tab">
+    <h3 class="section-title">Technical Arsenal</h3>
+    <p class="subtitle">Click tabs to switch categories.</p>
+
+    <div class="tabs-container">
+        <input type="radio" id="skill-tab1" name="skills">
+        <input type="radio" id="skill-tab2" name="skills">
+        <input type="radio" id="skill-tab3" name="skills">
+        <input type="radio" id="skill-tab4" name="skills">
+
+        <div class="tab-labels">
+            <label for="skill-tab1">C & Algorithms</label>
+            <label for="skill-tab2">Web Development</label>
+            <label for="skill-tab3">Data Sciece</label>
+            <label for="skill-tab4">OOP</label> </div>
+
+        <div class="tab-content">
+            <div class="content-box c1">
+                <div class="skill-container">
+                    <a href="#popup-c" class="skill-card">
+                        <img src="c.png"  class="skill-icon">
+                        <h4>C Language</h4>
+                    </a>
+                    <a href="#popup-algo" class="skill-card">
+                        <img src="algorithm.png" class="skill-icon">
+                        <h4>Algorithms</h4>
+                    </a>
+                </div>
             </div>
 
-            <div class="tab-content">
+            <div class="content-box c2">
+                <div class="skill-container">
+                    <a href="#popup-html" class="skill-card">
+                        <img src="html5.png" class="skill-icon">
+                        <h4>HTML</h4>
+                    </a>
+                    <a href="#popup-css" class="skill-card">
+                        <img src="css.png" class="skill-icon">
+                        <h4>CSS</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-box c3">
+                <div class="skill-container">
+                    <a href="#popup-py" class="skill-card">
+                        <img src="py.png" class="skill-icon">
+                        <h4>Python</h4>
+                    </a>
+                    <a href="#popup-r" class="skill-card">
+                        <img src="r.png" class="skill-icon">
+                        <h4>R</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-box c4">
+                <div class="skill-container">
+                    <a href="#popup-java" class="skill-card">
+                        <img src="java.png" class="skill-icon">
+                        <h4>Java</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <div id="popup-c" class="overlay">
+                    <div class="popup">
+                        <h2>C Language</h2>
+                        <a class="close" href="#skillset">&times;</a>
+                        <div class="popup-content">
+                            <p>Learned in <strong>CMSC 21</strong>. 
+                                Used for low-level system programming, memory management, 
+                                and understanding how computers execute code at the hardware level.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="popup-algo" class="overlay">
+                    <div class="popup">
+                        <h2>Algorithms</h2>
+                        <a class="close" href="#skillset">&times;</a>
+                        <div class="popup-content">
+                            <p>Studied in <strong>CMSC 123</strong>. Used for optimizing code efficiency, 
+                                sorting, searching, and solving complex computational problems using stacks,
+                                queues, and trees.Fundamental in computer science</p>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="content-box c1">
-                    <div class="skill-flex-container">
-                        <a href="#popup-c" class="skill-card">
-                            <span class="icon"></span>
-                            <h4>C Language</h4>
-                        </a>
-                        <a href="#popup-algo" class="skill-card">
-                            <span class="icon"></span>
-                            <h4></h4>
-                        </a>
-                        <a href="#popup-mem" class="skill-card">
-                            <span class="icon"></span>
-                            <h4></h4>
-                        </a>
+                <div id="popup-r" class="overlay">
+                    <div class="popup">
+                        <h2>R Programming</h2>
+                        <a class="close" href="#skills">&times;</a>
+                        <div class="popup-content">
+                            <p>Learned in <strong>CMSC 150</strong>. Used for statistical computing, 
+                                data visualization, and handling large datasets for numerical analysis.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="content-box c2">
-                    <div class="skill-flex-container">
-                        <a href="#popup-html" class="skill-card">
-                            <span class="icon"></span>
-                            <h4></h4>
-                        </a>
-                        <a href="#popup-css" class="skill-card">
-                            <span class="icon"></span>
-                            <h4></h4>
-                        </a>
+                <div id="popup-html" class="overlay">
+                    <div class="popup">
+                        <h2>HTML</h2>
+                        <a class="close" href="#skillset">&times;</a>
+                        <div class="popup-content">
+                            <p>Learned in <strong>CMSC 12 & 100</strong>. Used as the structural backbone of web 
+                                development to organize content and layout for websites.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="content-box c3">
-                    <div class="skill-flex-container">
-                        <a href="#popup-ds" class="skill-card">
-                            <span class="icon"></span>
-                            <h4></h4>
-                        </a>
-                        <a href="#popup-py" class="skill-card">
-                            <span class="icon"></span>
-                            <h4></h4>
-                        </a>
+                <div id="popup-css" class="overlay">
+                    <div class="popup">
+                        <h2>CSS</h2>
+                        <a class="close" href="#skillset">&times;</a>
+                        <div class="popup-content">
+                            <p>Learned in <strong>CMSC 12 & 100</strong>. Used for styling and layout design, bringing 
+                                life to raw HTML with animations, grids, and responsive layouts.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                
+                <div id="popup-java" class="overlay">
+                    <div class="popup">
+                        <h2>Data Science</h2>
+                        <a class="close" href="#skillset">&times;</a>
+                        <div class="popup-content">
+                            <p>Studied in <strong>CMSC 22</strong>. Used for Object-Oriented Programming (OOP) to build robust, scalable applications using
+                                the four pillars of OOP which are Abstraction,Inheritance, Polymorphism, and Encapsulation.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <div id="popup-c" class="overlay">
-        <div class="popup">
-            <h2></h2>
-            <a class="close" href="#skills">&times;</a>
-            <div class="popup-content">
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-    <div id="popup-algo" class="overlay">
-        <div class="popup">
-            <h2></h2>
-            <a class="close" href="#skills">&times;</a>
-            <div class="popup-content">
-                <p></p>
-            </div>
-        </div>
-    </div>
-    
-     <div id="popup-mem" class="overlay">
-        <div class="popup">
-            <h2></h2>
-            <a class="close" href="#skills">&times;</a>
-            <div class="popup-content">
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-    <div id="popup-html" class="overlay">
-        <div class="popup">
-            <h2></h2>
-            <a class="close" href="#skills">&times;</a>
-            <div class="popup-content">
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-    <div id="popup-css" class="overlay">
-        <div class="popup">
-            <h2></h2>
-            <a class="close" href="#skills">&times;</a>
-            <div class="popup-content">
-                <p></p>
-            </div>
-        </div>
-    </div>
-    
-     <div id="popup-ds" class="overlay">
-        <div class="popup">
-            <h2></h2>
-            <a class="close" href="#skills">&times;</a>
-            <div class="popup-content">
-                <p></p>
-            </div>
-        </div>
-    </div>
-
-     <div id="popup-py" class="overlay">
-        <div class="popup">
-            <h2></h2>
-            <a class="close" href="#skills">&times;</a>
-            <div class="popup-content">
-                <p></p>
-            </div>
-        </div>
-    </div>
-
+                <div id="popup-py" class="overlay">
+                    <div class="popup">
+                        <h2>Python</h2>
+                        <a class="close" href="#skillset">&times;</a>
+                        <div class="popup-content">
+                            <p>Utilized in <strong>UPLB Data Science Guild</strong> and learned in <strong>CMSC 12</strong> 
+                            Used for data analysis, scripting, and automation due to its powerful libraries and readability.</p>
+                        </div>
+                    </div>
+                </div>
 
         <section id="affiliations" class="affiliate-tab">
-            <div class="affiliate-cube">
-            <h3 class="affiliate-title">Affiliations</h3>
-            <p class="affiliate-subtitle">Click each affiliations.</p>
+            <div class="affiliate-box">
+                <h3 class="affiliate-title">Affiliations</h3>
+                <ul class="aff-list">
+                    <li>
+                        <strong>University of the Philippines Los Banos</strong>
+                        <span>BS Computer Science (2024-Present)</span>
+                    </li>
+                    <li>
+                        <strong>UPLB Data Science Guild</strong>
+                        <span>Member, Marketing and Creatives</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section id="links" class="links-box">
-            <h3>Connect With Me</h3>
-            <div class="links-flow-container">
-                <a href="twitter-link" class="social-link">X <span>github.com/lancebarroso</span></a>
-                <a href="facebook-link" class="social-link">Facebook<span>github.com/lancebarroso</span></a>
-                <a href="instagram-link" class="social-link">Instagram<span>github.com/lancebarroso</span></a>
-                <a href="linkedin-link" class="social-link">LinkedIn<span>github.com/lancebarroso</span></a>
-
+        <section id="links" class="links-tab">
+            <div class="links-box">
+                <h3>Connect With Me</h3>
+                <div class="links-flow-container">
+                    <a href="facebook-link" class="social-link"><span>https://www.facebook.com/share/1GM7siP8QE/</span></a>
+                    <a href="instagram-link" class="social-link"><span>https://www.instagram.com/lanceyblancey?igsh=aWgwZ3pjZG8yOXYy</span></a>
+                </div>
             </div>
-        </div>
+        </section>
 
         <section id="github" class="github-tab">
-            <div class="github-cube">
+            <div class="github-box">
                 <h2 class="glitch-text" data-text="GITHUB REPO">GITHUB REPO</h2>
                 <p>Check out my source code, contributions, and active repositories.</p>
-            <a href="github-username" target="_blank" class="gh-btn">
-                <span>github.com/lancebarroso</span>
-            </a>
+                <a href="github-username" target="_blank" class="gh-btn">
+                    <span>https://github.com/labarroso</span>
+                </a>
             </div>
         </section>
 
-
         <footer>
-            <p>© 2026 Lance Barroso. Crafted with HTML5 & CSS3 Flexbox.</p>
+            <p>2026 Lance Barroso. Crafted with HTML5 & CSS.</p>
         </footer>
-
-
+        
+        <div id="contact" class="overlay">
+                    <div class="popup-contact">
+                        <h2>Contact Me:</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="popup-back">
+                        <p>Email: labarroso@up.edu.ph</p>
+                        <p>Phone: +63 992 219 6047</p>
+                        </div>
+                    </div>
+                </div>
 
 
     </body>
